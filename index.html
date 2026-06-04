@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -54,11 +53,10 @@
             <h3>Cara Main Multiplayer (Netplay):</h3>
             <ol>
                 <li>Pemain 1 klik "Start Game" di layar hitam.</li>
-                <li>Setelah game mulai, arahkan mouse ke bagian bawah layar emulator untuk memunculkan menu.</li>
-                <li>Klik tombol <strong>Netplay</strong> (ikon dua orang).</li>
-                <li>Pilih <strong>Start Netplay Session</strong>.</li>
+                <li>Buka menu emulator (ikon garis tiga di kanan atas/bawah).</li>
+                <li>Pilih <strong>Netplay</strong> (Ikon bola dunia).</li>
+                <li>Klik <strong>Start Netplay Session</strong>.</li>
                 <li>Salin link yang muncul dan kirim ke pacarmu.</li>
-                <li>Pacarmu cukup klik link tersebut untuk bergabung!</li>
             </ol>
             <p class="note">Kontrol Player 1: Tombol Panah (Gerak), Z, X, A, S (Aksi), Enter (Start).</p>
         </div>
@@ -67,15 +65,15 @@
     <script>
         EJS_player = '#game';
         EJS_core = 'snes'; 
-        
-        // Link game langsung nembak ke RAW GitHub kamu!
         EJS_gameUrl = 'https://raw.githubusercontent.com/arisynn/Snes/main/gooftroop.sfc'; 
         
-        EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/'; 
+        // --- INI YANG DIGANTI JADI NIGHTLY ---
+        EJS_pathtodata = 'https://cdn.emulatorjs.org/nightly/data/'; 
+        EJS_netplayUrl = 'https://cdn.emulatorjs.org/nightly/data/netplay/server.js';
+        
         EJS_color = '#e63946'; 
         EJS_DEBUG_XX = true;
     </script>
-    <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+    <script src="https://cdn.emulatorjs.org/nightly/data/loader.js"></script>
 </body>
 </html>
-
